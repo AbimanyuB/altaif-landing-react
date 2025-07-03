@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         
         {/* Copyright Section */}
-        <div className="border-t border-white/20 mt-8 pt-6 text-center">
+        <div className="border-t-2 border-white/40 mt-8 pt-6 text-center">
           <p className="text-blue-100 text-sm">
             Copyright {currentYear} Altaif Indonesia All rights reserved
           </p>
