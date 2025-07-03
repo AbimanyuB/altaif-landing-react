@@ -81,13 +81,55 @@ const About = () => {
             className="relative"
           >
             <div className="relative">
-              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Students collaborating with digital learning technology"
-                  className="w-full h-full object-cover"
-                  style={{ display: 'block' }}
-                />
+              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center relative">
+                <svg className="w-full h-full object-cover" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:'#06B6D4', stopOpacity:1}} />
+                      <stop offset="50%" style={{stopColor:'#0EA5E9', stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:'#3B82F6', stopOpacity:1}} />
+                    </linearGradient>
+                  </defs>
+                  
+                  <rect width="800" height="600" fill="url(#aboutGrad)"/>
+                  
+                  {/* Students/People Icons */}
+                  <circle cx="200" cy="200" r="25" fill="white" fillOpacity="0.3"/>
+                  <text x="200" y="210" textAnchor="middle" fill="white" fontSize="20">👨‍🎓</text>
+                  
+                  <circle cx="350" cy="150" r="25" fill="white" fillOpacity="0.3"/>
+                  <text x="350" y="160" textAnchor="middle" fill="white" fontSize="20">👩‍🏫</text>
+                  
+                  <circle cx="500" cy="180" r="25" fill="white" fillOpacity="0.3"/>
+                  <text x="500" y="190" textAnchor="middle" fill="white" fontSize="20">👨‍💻</text>
+                  
+                  <circle cx="600" cy="250" r="25" fill="white" fillOpacity="0.3"/>
+                  <text x="600" y="260" textAnchor="middle" fill="white" fontSize="20">👩‍🎓</text>
+                  
+                  {/* Technology devices */}
+                  <rect x="150" y="350" width="80" height="50" rx="10" fill="white" fillOpacity="0.2"/>
+                  <text x="190" y="380" textAnchor="middle" fill="white" fontSize="24">💻</text>
+                  
+                  <rect x="280" y="380" width="60" height="40" rx="8" fill="white" fillOpacity="0.2"/>
+                  <text x="310" y="405" textAnchor="middle" fill="white" fontSize="20">📱</text>
+                  
+                  <rect x="400" y="360" width="70" height="45" rx="8" fill="white" fillOpacity="0.2"/>
+                  <text x="435" y="387" textAnchor="middle" fill="white" fontSize="22">📊</text>
+                  
+                  <rect x="520" y="370" width="90" height="55" rx="10" fill="white" fillOpacity="0.2"/>
+                  <text x="565" y="403" textAnchor="middle" fill="white" fontSize="26">🎯</text>
+                  
+                  {/* Center collaboration area */}
+                  <ellipse cx="400" cy="300" rx="120" ry="60" fill="white" fillOpacity="0.15"/>
+                  <text x="400" y="295" textAnchor="middle" fill="white" fontSize="14" fontWeight="bold">Collaborative</text>
+                  <text x="400" y="315" textAnchor="middle" fill="white" fontSize="12">Learning</text>
+                  
+                  {/* Connection lines */}
+                  <line x1="200" y1="225" x2="320" y2="280" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
+                  <line x1="350" y1="175" x2="380" y2="260" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
+                  <line x1="500" y1="205" x2="460" y2="270" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
+                  <line x1="600" y1="275" x2="480" y2="320" stroke="white" strokeWidth="1.5" strokeOpacity="0.4"/>
+                </svg>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent rounded-3xl"></div>
               

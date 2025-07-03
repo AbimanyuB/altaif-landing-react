@@ -90,13 +90,42 @@ const Hero = () => {
           
           <motion.div variants={itemVariants} className="relative">
             <div className="relative">
-              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Modern educational technology and e-learning platform"
-                  className="w-full h-full object-cover"
-                  style={{ display: 'block' }}
-                />
+              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center relative">
+                <svg className="w-full h-full object-cover" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:'#3B82F6', stopOpacity:1}} />
+                      <stop offset="50%" style={{stopColor:'#06B6D4', stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:'#1E40AF', stopOpacity:1}} />
+                    </linearGradient>
+                  </defs>
+                  
+                  <rect width="800" height="600" fill="url(#heroGrad)"/>
+                  
+                  {/* Educational Technology Icons */}
+                  <circle cx="150" cy="150" r="40" fill="white" fillOpacity="0.2"/>
+                  <text x="150" y="160" textAnchor="middle" fill="white" fontSize="30">💻</text>
+                  
+                  <circle cx="650" cy="150" r="35" fill="white" fillOpacity="0.15"/>
+                  <text x="650" y="160" textAnchor="middle" fill="white" fontSize="25">📚</text>
+                  
+                  <circle cx="200" cy="450" r="30" fill="white" fillOpacity="0.2"/>
+                  <text x="200" y="460" textAnchor="middle" fill="white" fontSize="20">🎓</text>
+                  
+                  <circle cx="600" cy="400" r="45" fill="white" fillOpacity="0.1"/>
+                  <text x="600" y="415" textAnchor="middle" fill="white" fontSize="35">📱</text>
+                  
+                  {/* Central focus */}
+                  <rect x="300" y="250" width="200" height="100" rx="20" fill="white" fillOpacity="0.3"/>
+                  <text x="400" y="290" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">E-Learning</text>
+                  <text x="400" y="315" textAnchor="middle" fill="white" fontSize="14">Platform</text>
+                  
+                  {/* Connecting lines */}
+                  <line x1="150" y1="190" x2="300" y2="280" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
+                  <line x1="650" y1="185" x2="500" y2="280" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
+                  <line x1="200" y1="420" x2="320" y2="350" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
+                  <line x1="600" y1="370" x2="480" y2="350" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
+                </svg>
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-3xl"></div>
               
