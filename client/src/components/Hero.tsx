@@ -25,25 +25,25 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden pt-20">
-      {/* Background Image */}
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-600 overflow-hidden pt-20">
+      {/* Background Image - Indonesia Islands */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1200"
-          alt="Educational technology background"
-          className="w-full h-full object-cover opacity-10"
+          src="https://images.unsplash.com/photo-1596206643082-5a6b5a5c7bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1200"
+          alt="Indonesia islands surrounded by ocean"
+          className="w-full h-full object-cover opacity-15"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/90 to-accent/85"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-400/90 via-cyan-400/90 to-blue-600/85"></div>
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-white/20 rounded-full floating-element backdrop-blur-sm"></div>
       <div className="absolute top-1/3 right-20 w-24 h-24 bg-white/10 rounded-full floating-element backdrop-blur-sm" style={{ animationDelay: '1s' }}></div>
       <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-white/15 rounded-full floating-element backdrop-blur-sm" style={{ animationDelay: '2s' }}></div>
       
-      {/* Geometric Shapes */}
+      {/* Geometric Shapes - Ocean Elements */}
       <div className="absolute top-32 right-1/4 w-32 h-32 border border-white/20 rounded-lg transform rotate-45 floating-element" style={{ animationDelay: '0.5s' }}></div>
-      <div className="absolute bottom-32 left-10 w-24 h-24 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute bottom-32 left-10 w-24 h-24 bg-gradient-to-r from-cyan-300/20 to-blue-300/20 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
