@@ -59,7 +59,7 @@ const Hero = () => {
               </span>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
                 One-Step Closer To
-                <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Innovating Your Business</span>
+                <span className="block bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">Innovating Your Business</span>
               </h1>
             </motion.div>
             
@@ -91,8 +91,8 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="relative">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Team collaboration with technology"
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                alt="Modern educational technology and e-learning platform"
                 className="rounded-3xl shadow-2xl w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-3xl"></div>
