@@ -2,32 +2,70 @@ import { motion } from 'framer-motion';
 
 const VisionMission = () => {
   return (
-    <section id="vision-mission" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
+    <section id="vision-mission" className="py-20 bg-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/5 rounded-full blur-xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold mb-4 gradient-text">Our Vision & Mission</h2>
+          <p className="text-xl text-gray-600">Driving the future of educational technology</p>
+        </motion.div>
+        
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Vision Side */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-primary to-secondary p-12 text-white"
+            className="relative"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center mb-6">
-                <i className="fas fa-eye text-4xl mr-4"></i>
-                <h3 className="text-3xl font-bold">Vision</h3>
+            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-8 rounded-3xl text-white overflow-hidden shadow-2xl">
+              {/* Background Image */}
+              <div className="absolute inset-0 opacity-10">
+                <img 
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                  alt="Future technology"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="text-lg leading-relaxed mb-8">
-                We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
-                but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
-              </p>
-              <div className="bg-white/20 p-4 rounded-xl">
-                <i className="fas fa-rocket text-2xl mb-2"></i>
-                <p className="text-sm">Leading the educational technology revolution</p>
+              
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+              <div className="absolute top-6 left-6 w-16 h-16 border border-white/20 rounded-lg transform rotate-12"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
+                    <i className="fas fa-eye text-3xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold">Vision</h3>
+                    <p className="text-white/80 text-sm">Future Forward</p>
+                  </div>
+                </div>
+                <p className="text-lg leading-relaxed mb-8 text-white/95">
+                  We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
+                  but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
+                </p>
+                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                  <div className="flex items-center mb-3">
+                    <i className="fas fa-rocket text-2xl mr-3"></i>
+                    <span className="font-semibold">Key Focus</span>
+                  </div>
+                  <p className="text-sm">Leading the educational technology revolution with innovative e-learning solutions</p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -38,23 +76,44 @@ const VisionMission = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-gray-900 to-gray-700 p-12 text-white"
+            className="relative"
           >
-            <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full -ml-16 -mt-16"></div>
-            <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mb-12"></div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center mb-6">
-                <i className="fas fa-bullseye text-4xl mr-4"></i>
-                <h3 className="text-3xl font-bold">Mission</h3>
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-8 rounded-3xl text-white overflow-hidden shadow-2xl">
+              {/* Background Image */}
+              <div className="absolute inset-0 opacity-10">
+                <img 
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                  alt="Team collaboration"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="text-lg leading-relaxed mb-8">
-                We harness technology to empower students and educationists do and achieve more. We strive to better 
-                technological and pedagogical experience of both the learner and the educator.
-              </p>
-              <div className="bg-white/20 p-4 rounded-xl">
-                <i className="fas fa-users text-2xl mb-2"></i>
-                <p className="text-sm">Empowering educational communities</p>
+              
+              {/* Decorative elements */}
+              <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full -ml-16 -mt-16"></div>
+              <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mb-12"></div>
+              <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-r from-yellow-400/30 to-orange-400/30 rounded-full"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
+                    <i className="fas fa-bullseye text-3xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold">Mission</h3>
+                    <p className="text-white/80 text-sm">Purpose Driven</p>
+                  </div>
+                </div>
+                <p className="text-lg leading-relaxed mb-8 text-white/95">
+                  We harness technology to empower students and educationists do and achieve more. We strive to better 
+                  technological and pedagogical experience of both the learner and the educator.
+                </p>
+                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                  <div className="flex items-center mb-3">
+                    <i className="fas fa-users text-2xl mr-3"></i>
+                    <span className="font-semibold">Core Values</span>
+                  </div>
+                  <p className="text-sm">Empowering educational communities through innovative technology solutions</p>
+                </div>
               </div>
             </div>
           </motion.div>
