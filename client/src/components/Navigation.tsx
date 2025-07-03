@@ -37,7 +37,9 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
               <i className="fas fa-graduation-cap text-white text-lg"></i>
             </div>
-            <span className="text-xl font-bold text-gray-900">Altaif</span>
+            <span className={`text-xl font-bold transition-colors ${
+              scrolled ? 'text-gray-900' : 'text-white'
+            }`}>Altaif</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -45,7 +47,9 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 hover:text-primary transition-colors"
+                className={`transition-colors ${
+                  scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-blue-200'
+                }`}
               >
                 {item.label}
               </button>
@@ -61,7 +65,9 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary"
+              className={`transition-colors ${
+                scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-blue-200'
+              }`}
             >
               <i className="fas fa-bars text-xl"></i>
             </button>
