@@ -47,7 +47,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full"
             >
               <div className={`bg-gradient-to-br ${project.gradient} p-8 text-white`}>
                 <div className="flex items-center mb-4">
@@ -56,9 +56,9 @@ const Projects = () => {
                 </div>
                 <p className="text-sm opacity-90">{project.subtitle}</p>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="space-y-2 mb-6">
+                <div className="space-y-2 mb-6 flex-grow">
                   {project.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center">
                       <i className="fas fa-check text-green-500 mr-2"></i>
@@ -66,7 +66,7 @@ const Projects = () => {
                     </div>
                   ))}
                 </div>
-                <button className="text-primary font-semibold hover:text-secondary transition-colors">
+                <button className="text-primary font-semibold hover:text-secondary transition-colors mt-auto self-start">
                   View Project →
                 </button>
               </div>

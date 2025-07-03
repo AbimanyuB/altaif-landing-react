@@ -30,7 +30,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-8 rounded-3xl text-white overflow-hidden shadow-2xl">
+            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -45,7 +45,7 @@ const VisionMission = () => {
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
               <div className="absolute top-6 left-6 w-16 h-16 border border-white/20 rounded-lg transform rotate-12"></div>
               
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
                     <i className="fas fa-eye text-3xl"></i>
@@ -55,11 +55,11 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Future Forward</p>
                   </div>
                 </div>
-                <p className="text-lg leading-relaxed mb-8 text-white/95">
+                <p className="text-lg leading-relaxed mb-8 text-white/95 flex-grow">
                   We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
                   but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 mt-auto">
                   <div className="flex items-center mb-3">
                     <i className="fas fa-rocket text-2xl mr-3"></i>
                     <span className="font-semibold">Key Focus</span>
@@ -78,7 +78,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-8 rounded-3xl text-white overflow-hidden shadow-2xl">
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -93,7 +93,7 @@ const VisionMission = () => {
               <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mb-12"></div>
               <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-r from-yellow-400/30 to-orange-400/30 rounded-full"></div>
               
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
                     <i className="fas fa-bullseye text-3xl"></i>
@@ -103,11 +103,11 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Purpose Driven</p>
                   </div>
                 </div>
-                <p className="text-lg leading-relaxed mb-8 text-white/95">
+                <p className="text-lg leading-relaxed mb-8 text-white/95 flex-grow">
                   We harness technology to empower students and educationists do and achieve more. We strive to better 
                   technological and pedagogical experience of both the learner and the educator.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 mt-auto">
                   <div className="flex items-center mb-3">
                     <i className="fas fa-users text-2xl mr-3"></i>
                     <span className="font-semibold">Core Values</span>
