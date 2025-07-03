@@ -55,11 +55,11 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Future Forward</p>
                   </div>
                 </div>
-                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95 flex-grow">
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95" style={{ minHeight: '120px' }}>
                   We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
                   but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30 mt-auto">
+                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30" style={{ minHeight: '100px' }}>
                   <div className="flex items-center mb-3">
                     <i className="fas fa-rocket text-xl md:text-2xl mr-3"></i>
                     <span className="font-semibold text-sm md:text-base">Key Focus</span>
@@ -103,11 +103,11 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Purpose Driven</p>
                   </div>
                 </div>
-                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95 flex-grow">
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95" style={{ minHeight: '120px' }}>
                   We harness technology to empower students and educationists do and achieve more. We strive to better 
-                  technological and pedagogical experience of both the learner and the educator.
+                  technological and pedagogical experience of both the learner and the educator through innovative solutions.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30 mt-auto">
+                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30" style={{ minHeight: '100px' }}>
                   <div className="flex items-center mb-3">
                     <i className="fas fa-users text-xl md:text-2xl mr-3"></i>
                     <span className="font-semibold text-sm md:text-base">Core Values</span>
