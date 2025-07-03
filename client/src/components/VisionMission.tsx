@@ -30,7 +30,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[400px] md:min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -55,7 +55,7 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Future Forward</p>
                   </div>
                 </div>
-                <p className="text-lg leading-relaxed mb-8 text-white/95 flex-grow">
+                <p className="text-base md:text-lg leading-relaxed mb-6 md:mb-8 text-white/95 flex-grow">
                   We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
                   but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
                 </p>
@@ -78,7 +78,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[400px] md:min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -103,7 +103,7 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Purpose Driven</p>
                   </div>
                 </div>
-                <p className="text-lg leading-relaxed mb-8 text-white/95 flex-grow">
+                <p className="text-base md:text-lg leading-relaxed mb-6 md:mb-8 text-white/95 flex-grow">
                   We harness technology to empower students and educationists do and achieve more. We strive to better 
                   technological and pedagogical experience of both the learner and the educator.
                 </p>
