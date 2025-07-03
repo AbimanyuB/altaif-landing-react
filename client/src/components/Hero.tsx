@@ -59,7 +59,7 @@ const Hero = () => {
               </span>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
                 One-Step Closer To
-                <span className="block bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">Innovating Your Business</span>
+                <span className="block bg-gradient-to-r from-yellow-300 to-yellow-400 bg-clip-text text-transparent">Innovating Your Business</span>
               </h1>
             </motion.div>
             
