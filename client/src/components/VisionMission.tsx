@@ -30,7 +30,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[400px] md:min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -55,16 +55,16 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Future Forward</p>
                   </div>
                 </div>
-                <p className="text-base md:text-lg leading-relaxed mb-6 md:mb-8 text-white/95 flex-grow">
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95 flex-grow">
                   We envision a future in which technology driven education is ubiquitous. E-learning has been here for many years 
                   but we foresee the prevalence of e-universities and would like to be at the forefront of the revolution.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 mt-auto">
+                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30 mt-auto">
                   <div className="flex items-center mb-3">
-                    <i className="fas fa-rocket text-2xl mr-3"></i>
-                    <span className="font-semibold">Key Focus</span>
+                    <i className="fas fa-rocket text-xl md:text-2xl mr-3"></i>
+                    <span className="font-semibold text-sm md:text-base">Key Focus</span>
                   </div>
-                  <p className="text-sm">Leading the educational technology revolution with innovative e-learning solutions</p>
+                  <p className="text-xs md:text-sm leading-relaxed">Leading the educational technology revolution with innovative e-learning solutions</p>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[400px] md:min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -103,16 +103,16 @@ const VisionMission = () => {
                     <p className="text-white/80 text-sm">Purpose Driven</p>
                   </div>
                 </div>
-                <p className="text-base md:text-lg leading-relaxed mb-6 md:mb-8 text-white/95 flex-grow">
+                <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 text-white/95 flex-grow">
                   We harness technology to empower students and educationists do and achieve more. We strive to better 
                   technological and pedagogical experience of both the learner and the educator.
                 </p>
-                <div className="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 mt-auto">
+                <div className="bg-white/20 backdrop-blur-sm p-4 md:p-6 rounded-2xl border border-white/30 mt-auto">
                   <div className="flex items-center mb-3">
-                    <i className="fas fa-users text-2xl mr-3"></i>
-                    <span className="font-semibold">Core Values</span>
+                    <i className="fas fa-users text-xl md:text-2xl mr-3"></i>
+                    <span className="font-semibold text-sm md:text-base">Core Values</span>
                   </div>
-                  <p className="text-sm">Empowering educational communities through innovative technology solutions</p>
+                  <p className="text-xs md:text-sm leading-relaxed">Empowering educational communities through innovative technology solutions</p>
                 </div>
               </div>
             </div>
