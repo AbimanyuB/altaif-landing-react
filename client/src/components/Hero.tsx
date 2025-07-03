@@ -90,11 +90,14 @@ const Hero = () => {
           
           <motion.div variants={itemVariants} className="relative">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Modern educational technology and e-learning platform"
-                className="rounded-3xl shadow-2xl w-full h-96 object-cover"
-              />
+              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  alt="Modern educational technology and e-learning platform"
+                  className="w-full h-full object-cover"
+                  style={{ display: 'block' }}
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-3xl"></div>
               
               {/* Floating Feature Cards */}
