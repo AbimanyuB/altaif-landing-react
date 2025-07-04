@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { scrollToSection } from '@/lib/utils';
+import LogoWhite from '@/assets/logo-white.png';
+import Logo from '@/assets/logo.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,12 +36,10 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-              <i className="fas fa-graduation-cap text-white text-lg"></i>
-            </div>
+            <img src={scrolled ? Logo : LogoWhite} alt='logo' className='w-12 h-12'/>
             <span className={`text-xl font-bold transition-colors ${
-              scrolled ? 'text-gray-900' : 'text-white'
-            }`}>Altaif</span>
+              scrolled ? 'text-primary' : 'text-white'
+            }`}>Altaiftech Indonesia</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

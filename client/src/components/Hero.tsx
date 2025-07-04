@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { scrollToSection } from '@/lib/utils';
+import heroImage from '@/assets/hero.png';
 
 const Hero = () => {
   const containerVariants = {
@@ -26,14 +27,6 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-600 overflow-hidden pt-20">
-      {/* Background Image - Indonesia Islands */}
-      <div className="absolute inset-0">
-        <img 
-          src="https://images.unsplash.com/photo-1596206643082-5a6b5a5c7bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1200"
-          alt="Indonesia islands surrounded by ocean"
-          className="w-full h-full object-cover opacity-15"
-        />
-      </div>
       <div className="absolute inset-0 bg-gradient-to-br from-blue-400/90 via-cyan-400/90 to-blue-600/85"></div>
       
       {/* Floating Elements */}
@@ -90,7 +83,7 @@ const Hero = () => {
           
           <motion.div variants={itemVariants} className="relative">
             <div className="relative">
-              <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center relative">
+              {/* <div className="rounded-3xl shadow-2xl w-full h-96 overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center relative">
                 <svg className="w-full h-full object-cover" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -103,7 +96,7 @@ const Hero = () => {
                   <rect width="800" height="600" fill="url(#heroGrad)"/>
                   
                   {/* Educational Technology Icons */}
-                  <circle cx="150" cy="150" r="40" fill="white" fillOpacity="0.2"/>
+                  {/* <circle cx="150" cy="150" r="40" fill="white" fillOpacity="0.2"/>
                   <text x="150" y="160" textAnchor="middle" fill="white" fontSize="30">💻</text>
                   
                   <circle cx="650" cy="150" r="35" fill="white" fillOpacity="0.15"/>
@@ -116,19 +109,25 @@ const Hero = () => {
                   <text x="600" y="415" textAnchor="middle" fill="white" fontSize="35">📱</text>
                   
                   {/* Central focus */}
-                  <rect x="300" y="250" width="200" height="100" rx="20" fill="white" fillOpacity="0.3"/>
+                  {/* <rect x="300" y="250" width="200" height="100" rx="20" fill="white" fillOpacity="0.3"/>
                   <text x="400" y="290" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">E-Learning</text>
-                  <text x="400" y="315" textAnchor="middle" fill="white" fontSize="14">Platform</text>
+                  <text x="400" y="315" textAnchor="middle" fill="white" fontSize="14">Platform</text> */}
                   
                   {/* Connecting lines */}
-                  <line x1="150" y1="190" x2="300" y2="280" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
+                  {/* <line x1="150" y1="190" x2="300" y2="280" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
                   <line x1="650" y1="185" x2="500" y2="280" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
                   <line x1="200" y1="420" x2="320" y2="350" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
                   <line x1="600" y1="370" x2="480" y2="350" stroke="white" strokeWidth="2" strokeOpacity="0.3"/>
                 </svg>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-3xl"></div> */}
               
+              <img 
+                src={heroImage}
+                alt="Indonesia islands surrounded by ocean"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+
               {/* Floating Feature Cards */}
               <div className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg backdrop-blur-sm">
                 <div className="flex items-center space-x-2">

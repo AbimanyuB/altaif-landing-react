@@ -61,14 +61,14 @@ const Contact = () => {
                 <i className="fas fa-envelope text-2xl mr-4"></i>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="opacity-90">info@altaif.com</p>
+                  <p className="opacity-90">info@altaiftech.com</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <i className="fas fa-map-marker-alt text-2xl mr-4"></i>
                 <div>
                   <h4 className="font-semibold">Address</h4>
-                  <p className="opacity-90">Kuala Lumpur, Malaysia</p>
+                  <p className="opacity-90">Jakarta, Indonesia</p>
                 </div>
               </div>
             </div>

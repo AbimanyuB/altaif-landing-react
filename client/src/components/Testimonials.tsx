@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import EzzProfpic from '@/assets/profpic/ezz-profpic.png';
+import Ahmed1Profpic from '@/assets/profpic/ahmed-profpic.jpeg';
+import Ahmed2Profpic from '@/assets/profpic/ahmed-profpic.png';
+import BilalProfpic from '@/assets/profpic/bilal-profpic.png';
+import FadhliProfpic from '@/assets/profpic/fadhli-profpic.jpg';
 
 const Testimonials = () => {
   const sectionRef = useScrollAnimation();
@@ -10,35 +15,35 @@ const Testimonials = () => {
     {
       name: "Narjis Hisham",
       role: "Interactive, Malaysia Manager",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
+      image: Ahmed2Profpic,
       content: "Altaif is the best! Great in communication and technical expertise. They provided timely and detailed updates, which help to manage the overall system modules. These guys know what they are doing and they do it well.",
       rating: 5
     },
     {
       name: "Ezz",
       role: "Yonderken Business Solution, CIO",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
+      image: EzzProfpic,
       content: "Working with Altaif Singapore team is an outstanding experience. In education systems solutions, you are the best, Thanks, guys!",
       rating: 5
     },
     {
       name: "Ahmed",
       role: "EAG Malaysia, Business Development Manager",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
+      image: Ahmed1Profpic,
       content: "The team is very experienced in education and language building by always striving and making sure the projects are completed in the best manner",
       rating: 5
     },
     {
       name: "Bilal",
       role: "Bridges Centre for Open Learning, China, CEO",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
+      image: BilalProfpic,
       content: "The integration part on both academic and administration modules with Altaif ERP is perfect. I believe this system will bloom up in the Industrial and educational systems",
       rating: 5
     },
     {
       name: "Fadhli",
       role: "Yonderken Indonesia, Jakarta, IT Manager",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
+      image: FadhliProfpic,
       content: "Integrating conventional teaching and learning methods with new technology is not an easy thing, however, Altaif has managed to do that perfectly. Altaif Singapore is the best partner for educational institutions.",
       rating: 5
     }
