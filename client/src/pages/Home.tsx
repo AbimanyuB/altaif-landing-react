@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Objectives from '@/components/Objectives';
 import VisionMission from '@/components/VisionMission';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import GetStarted from '@/components/GetStarted';
 import Projects from '@/components/Projects';
 import Testimonials from '@/components/Testimonials';
 import Team from '@/components/Team';
@@ -19,9 +20,10 @@ const Home = () => {
       <Objectives />
       <VisionMission />
       <WhyChooseUs />
+      <GetStarted />
       <Projects />
       <Testimonials />
-      <Team />
+      {/* <Team /> */}
       <Contact />
       <Footer />
     </div>

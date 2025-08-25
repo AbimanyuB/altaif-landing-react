@@ -6,13 +6,34 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navigation from "@/components/Navigation";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
+import DemoModal from "@/components/DemoModal";
+import { DemoModalProvider, useDemoModalContext } from "@/contexts/DemoModalContext";
+import Consultation from "./pages/Consultation";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/consultation" component={Home} />
       <Route component={NotFound} />
     </Switch>
+  );
+}
+
+function AppContent() {
+  const { isModalOpen, closeModal, modalTrigger } = useDemoModalContext();
+
+  return (
+    <>
+      <Navigation />
+      <Toaster />
+      <Router />
+      <DemoModal 
+        isOpen={isModalOpen} 
+        onClose={closeModal} 
+        trigger={modalTrigger}
+      />
+    </>
   );
 }
 
@@ -20,9 +41,9 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Navigation />
-        <Toaster />
-        <Router />
+        <DemoModalProvider>
+          <AppContent />
+        </DemoModalProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
