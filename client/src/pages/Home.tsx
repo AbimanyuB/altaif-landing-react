@@ -1,15 +1,15 @@
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import About from '@/components/About';
-import Objectives from '@/components/Objectives';
-import VisionMission from '@/components/VisionMission';
-import WhyChooseUs from '@/components/WhyChooseUs';
-import GetStarted from '@/components/GetStarted';
-import Projects from '@/components/Projects';
-import Testimonials from '@/components/Testimonials';
-import Team from '@/components/Team';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Hero from '@/components/home/Hero';
+import Services from '@/components/home/Services';
+import About from '@/components/home/About';
+import Objectives from '@/components/home/Objectives';
+import VisionMission from '@/components/home/VisionMission';
+import WhyChooseUs from '@/components/home/WhyChooseUs';
+import GetStarted from '@/components/home/GetStarted';
+import Projects from '@/components/home/Projects';
+import Testimonials from '@/components/home/Testimonials';
+import Team from '@/components/home/Team';
+import Contact from '@/components/home/Contact';
+import Footer from '@/components/home/Footer';
 
 const Home = () => {
   return (

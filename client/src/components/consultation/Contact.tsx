@@ -50,8 +50,7 @@ const Contact = () => {
             </p>
             
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-6">📍 Altaif Tech Branches:</h3>
-              
+              <h3 className="text-2xl font-bold mb-6">Altaif Tech Branches:</h3>
               <div className="space-y-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                   <div className="flex items-center mb-3">

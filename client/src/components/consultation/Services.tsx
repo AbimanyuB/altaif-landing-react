@@ -26,7 +26,7 @@ const Services = () => {
           color: "secondary"
         },
         {
-          title: "MOHYEY LMS + Odoo Integration",
+          title: "LMS + Odoo Integration",
           description: "Manage everything from course setup to student progress with an LMS that's powerful, flexible, and fully integrated.",
           icon: "fas fa-graduation-cap",
           color: "accent"
@@ -50,7 +50,7 @@ const Services = () => {
           color: "blue-500"
         },
         {
-          title: "MOHYEY LMS",
+          title: "MOHEYE LMS",
           description: "A streamlined mobile solution for admission applications and status tracking, customized for institutions.",
           icon: "fas fa-mobile-alt",
           color: "purple-500"
@@ -68,7 +68,7 @@ const Services = () => {
           color: "orange-500"
         },
         {
-          title: "MOHYEY University System",
+          title: "MOHEYE University System",
           description: "Comprehensive ERP for higher education — admissions, course registration, postgraduate tracking, and reporting all in one.",
           icon: "fas fa-university",
           color: "red-500"
@@ -338,12 +338,12 @@ const Services = () => {
                       // Layout 3: Overlapping elements design
                       {
                         containerClass: "relative mb-12",
-                        cardClass: "bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border-t-8 transform hover:scale-105 transition-all duration-500",
-                        iconPosition: "relative mb-6",
-                        iconClass: "w-18 h-18 rounded-3xl shadow-lg mx-auto",
-                        titleClass: "text-2xl font-bold mb-4 text-center",
-                        descClass: "text-gray-600 mb-8 leading-relaxed text-center",
-                        buttonClass: "w-full rounded-xl py-4 font-bold text-lg shadow-xl"
+                        cardClass: "bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-700 border-l-8",
+                        iconPosition: "absolute -top-6 -left-6",
+                        iconClass: "w-20 h-20 rounded-full shadow-2xl",
+                        titleClass: "text-2xl font-bold mb-4 ml-16",
+                        descClass: "text-gray-600 mb-8 leading-relaxed",
+                        buttonClass: "w-full rounded-2xl py-4 font-bold text-lg shadow-xl"
                       },
                       // Layout 4: Asymmetric modern card
                       {

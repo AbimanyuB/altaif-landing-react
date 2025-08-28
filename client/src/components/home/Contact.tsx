@@ -43,32 +43,47 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-white animate-on-scroll"
           >
-            <h2 className="text-4xl font-bold mb-6">Get Free Consultation</h2>
+            <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
             <p className="text-xl mb-8 opacity-90">
               Ready to transform your educational institution with cutting-edge technology? 
               Let's discuss your requirements and create a customized solution.
             </p>
             
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <i className="fas fa-phone text-2xl mr-4"></i>
-                <div>
-                  <h4 className="font-semibold">Phone</h4>
-                  <p className="opacity-90">+60 3-1234-5678</p>
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold mb-6">Altaif Tech Branches:</h3>
+              <div className="space-y-8">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <div className="flex items-center mb-3">
+                    <i className="fas fa-map-marker-alt text-2xl mr-4"></i>
+                    <h4 className="text-xl font-bold">Altaif KL</h4>
+                  </div>
+                  <p className="opacity-90 ml-10">Kuala Lumpur, Malaysia</p>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <div className="flex items-center mb-3">
+                    <i className="fas fa-map-marker-alt text-2xl mr-4"></i>
+                    <h4 className="text-xl font-bold">Altaif Singapore</h4>
+                  </div>
+                  <p className="opacity-90 ml-10">Singapore</p>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <div className="flex items-center mb-3">
+                    <i className="fas fa-map-marker-alt text-2xl mr-4"></i>
+                    <h4 className="text-xl font-bold">Altaif Indonesia</h4>
+                  </div>
+                  <p className="opacity-90 ml-10">Jakarta, Indonesia</p>
                 </div>
               </div>
+            </div>
+            
+            <div className="space-y-4">
               <div className="flex items-center">
                 <i className="fas fa-envelope text-2xl mr-4"></i>
                 <div>
                   <h4 className="font-semibold">Email</h4>
                   <p className="opacity-90">info@altaiftech.com</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <i className="fas fa-map-marker-alt text-2xl mr-4"></i>
-                <div>
-                  <h4 className="font-semibold">Address</h4>
-                  <p className="opacity-90">Jakarta, Indonesia</p>
                 </div>
               </div>
             </div>
