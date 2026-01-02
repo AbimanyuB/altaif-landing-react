@@ -6,6 +6,7 @@ import Ahmed1Profpic from '@/assets/profpic/ahmed-profpic.jpeg';
 import Ahmed2Profpic from '@/assets/profpic/ahmed-profpic.png';
 import BilalProfpic from '@/assets/profpic/bilal-profpic.png';
 import FadhliProfpic from '@/assets/profpic/fadhli-profpic.jpg';
+import DefaultProfpic from '@/assets/profpic/default_avatar.png';
 
 const Testimonials = () => {
   const sectionRef = useScrollAnimation();
@@ -15,7 +16,7 @@ const Testimonials = () => {
     {
       name: "Narjis Hisham",
       role: "Interactive, Malaysia Manager",
-      image: Ahmed2Profpic,
+      image: DefaultProfpic,
       content: "Altaif is the best! Great in communication and technical expertise. They provided timely and detailed updates, which help to manage the overall system modules. These guys know what they are doing and they do it well.",
       rating: 5
     },

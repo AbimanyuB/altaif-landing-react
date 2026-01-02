@@ -13,7 +13,7 @@ import { DemoModalProvider, useDemoModalContext } from "@/contexts/DemoModalCont
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Consultation} />
+      <Route path="/" component={Home} />
       <Route path="/consultation" component={Consultation} />
       <Route component={NotFound} />
     </Switch>
