@@ -67,7 +67,7 @@ const Testimonials = () => {
   }, [maxSlide]);
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 right-20 w-32 h-32 bg-primary/5 rounded-full blur-xl"></div>

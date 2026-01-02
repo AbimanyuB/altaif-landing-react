@@ -35,7 +35,7 @@ const Services = () => {
           title: "LMS Edx App + Global Implementation",
           description: "Access and manage global online courses with multilingual support and international deployment.",
           icon: "fas fa-globe",
-          color: "green-500"
+          color: "accent"
         }
       ]
     },

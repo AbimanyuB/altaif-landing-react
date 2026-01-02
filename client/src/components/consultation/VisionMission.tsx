@@ -5,8 +5,8 @@ const VisionMission = () => {
     <section id="vision-mission" className="py-20 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-400/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/5 rounded-full blur-xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -30,7 +30,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-blue-500 via-cyan-500 to-blue-600 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-primary via-secondary to-primary p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
               {/* Background Image - Ocean waves */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -78,7 +78,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-slate-800 via-blue-900 to-slate-700 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
+            <div className="relative bg-gradient-to-br from-slate-800 via-primary to-slate-700 p-6 md:p-8 rounded-3xl text-white overflow-hidden shadow-2xl min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex flex-col">
               {/* Background Image - Indonesian islands */}
               <div className="absolute inset-0 opacity-10">
                 <img 
@@ -91,7 +91,7 @@ const VisionMission = () => {
               {/* Decorative elements */}
               <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full -ml-16 -mt-16"></div>
               <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mb-12"></div>
-              <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-r from-cyan-400/30 to-blue-400/30 rounded-full"></div>
+              <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full"></div>
               
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center mb-6">

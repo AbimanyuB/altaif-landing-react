@@ -21,7 +21,7 @@ const Projects = () => {
       subtitle: "Cutting-edge Learning Management System",
       description: "Delivers world-class learning experiences to top schools, companies, and organizations.",
       features: ["First-class experience", "24/7 Support", "Open Source"],
-      gradient: "from-green-600 to-blue-600",
+      gradient: "from-accent to-secondary",
       icon: "fas fa-laptop-code",
       image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       badge: "Popular",
@@ -32,7 +32,7 @@ const Projects = () => {
       subtitle: "Professional Learning Systems",
       description: "Comprehensive suite of educational tools including PRO, LINGUA, and IGCSE solutions.",
       features: ["Multiple Platforms", "Custom Features", "Laravel Development"],
-      gradient: "from-purple-600 to-pink-600",
+      gradient: "from-primary to-secondary",
       icon: "fas fa-cogs",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       badge: "New",
@@ -41,7 +41,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
+    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-primary/5 to-secondary/5 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 right-20 w-40 h-40 bg-primary/5 rounded-full blur-2xl"></div>
@@ -79,7 +79,7 @@ const Projects = () => {
               <div className="absolute top-4 right-4 z-20">
                 <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white ${
                   project.badge === 'Featured' ? 'bg-gradient-to-r from-yellow-500 to-orange-500' :
-                  project.badge === 'Popular' ? 'bg-gradient-to-r from-green-500 to-blue-500' :
+                  project.badge === 'Popular' ? 'bg-gradient-to-r from-accent to-secondary' :
                   'bg-gradient-to-r from-purple-500 to-pink-500'
                 }`}>
                   {project.badge}
@@ -127,7 +127,7 @@ const Projects = () => {
                 <div className="space-y-3 mb-6">
                   {project.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center group/feature">
-                      <div className="w-5 h-5 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform">
+                      <div className="w-5 h-5 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform">
                         <i className="fas fa-check text-white text-xs"></i>
                       </div>
                       <span className="text-sm text-gray-700 font-medium">{feature}</span>

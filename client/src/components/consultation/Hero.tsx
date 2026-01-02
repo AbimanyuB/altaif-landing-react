@@ -29,8 +29,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-600 overflow-hidden pt-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-400/90 via-cyan-400/90 to-blue-600/85"></div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden pt-20">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/90 to-accent/85"></div>
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-white/20 rounded-full floating-element backdrop-blur-sm"></div>
@@ -39,7 +39,7 @@ const Hero = () => {
       
       {/* Geometric Shapes - Ocean Elements */}
       <div className="absolute top-32 right-1/4 w-32 h-32 border border-white/20 rounded-lg transform rotate-45 floating-element" style={{ animationDelay: '0.5s' }}></div>
-      <div className="absolute bottom-32 left-10 w-24 h-24 bg-gradient-to-r from-cyan-300/20 to-blue-300/20 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute bottom-32 left-10 w-24 h-24 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full floating-element" style={{ animationDelay: '1.5s' }}></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

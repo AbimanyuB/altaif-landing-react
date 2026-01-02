@@ -9,7 +9,7 @@ const About = () => {
   const experienceCount = useCounter(24);
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -57,7 +57,7 @@ const About = () => {
                   <div className="text-sm text-gray-600 font-medium">Positive Feedbacks</div>
                   <i className="fas fa-star text-accent/40 text-lg mt-1"></i>
                 </div>
-                <div className="text-center bg-gradient-to-r from-green-500/5 to-blue-500/5 p-4 rounded-2xl border border-green-500/10" ref={experienceCount.elementRef}>
+                <div className="text-center bg-gradient-to-r from-accent/5 to-secondary/5 p-4 rounded-2xl border border-green-500/10" ref={experienceCount.elementRef}>
                   <div className="text-3xl font-bold gradient-text">{experienceCount.count}+</div>
                   <div className="text-sm text-gray-600 font-medium">Years Experience</div>
                   <i className="fas fa-calendar text-green-500/40 text-lg mt-1"></i>
@@ -91,7 +91,7 @@ const About = () => {
               {/* Floating Achievement Cards */}
               <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-lg backdrop-blur-sm border border-white/20">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <div className="w-12 h-12 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center mx-auto mb-2">
                     <i className="fas fa-award text-white"></i>
                   </div>
                   <div className="text-sm font-bold text-gray-800">ISO Certified</div>
@@ -113,7 +113,7 @@ const About = () => {
               
               {/* Background decorative elements */}
               <div className="absolute top-4 left-4 w-8 h-8 bg-yellow-400/30 rounded-full"></div>
-              <div className="absolute bottom-4 right-4 w-6 h-6 bg-blue-400/30 rounded-full"></div>
+              <div className="absolute bottom-4 right-4 w-6 h-6 bg-secondary/30 rounded-full"></div>
             </div>
           </motion.div>
         </div>

@@ -36,7 +36,7 @@ const Services = () => {
       title: "Education ERP Systems",
       description: "Integrated enterprise resource planning systems designed specifically for educational institutions. Manage academics, administration, and operations seamlessly.",
       icon: "fas fa-cogs",
-      color: "green-500",
+      color: "accent",
       image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       features: ["Integrated solution", "Security & compliance", "Business growth enabler"],
       reverse: true

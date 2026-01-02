@@ -13,15 +13,17 @@
   --card-foreground: hsl(210, 40%, 8%);
   --border: hsl(210, 20%, 90%);
   --input: hsl(210, 20%, 90%);
-  --primary: hsl(200, 100%, 60%);
+  --primary: hsl(340, 65%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(195, 100%, 65%);
+  --secondary: hsl(295, 85%, 72%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(210, 100%, 70%);
+  --accent: hsl(320, 45%, 40%);
   --accent-foreground: hsl(0, 0%, 100%);
+  --coral: hsl(0, 85%, 72%);
+  --coral-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(200, 100%, 60%);
+  --ring: hsl(340, 65%, 60%);
   --radius: 0.5rem;
 }
 
@@ -36,15 +38,17 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(220, 15%, 15%);
   --input: hsl(220, 15%, 15%);
-  --primary: hsl(200, 100%, 60%);
+  --primary: hsl(340, 65%, 60%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(195, 100%, 65%);
+  --secondary: hsl(295, 85%, 72%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(210, 100%, 70%);
+  --accent: hsl(320, 45%, 40%);
   --accent-foreground: hsl(0, 0%, 100%);
+  --coral: hsl(0, 85%, 72%);
+  --coral-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(200, 100%, 60%);
+  --ring: hsl(340, 65%, 60%);
   --radius: 0.5rem;
 }
 
@@ -65,7 +69,7 @@
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(135deg, hsl(200, 100%, 60%), hsl(195, 100%, 65%));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

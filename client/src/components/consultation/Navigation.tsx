@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { scrollToSection } from '@/lib/utils';
 import { useDemoModalContext } from '@/contexts/DemoModalContext';
 import LogoWhite from '@/assets/logo-white.png';
-import Logo from '@/assets/logo.png';
+import Logo from '@/assets/new-logo.png';
 
 const Navigation = () => {
   const { openModal } = useDemoModalContext();
@@ -38,7 +38,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <img src={scrolled ? Logo : LogoWhite} alt='logo' className='w-12 h-12'/>
+            <img src={scrolled ? Logo : Logo} alt='logo' style={{width:'75px', height: '75px'}}/>
             <span className={`text-xl font-bold transition-colors ${
               scrolled ? 'text-primary' : 'text-white'
             }`}>Altaif Tech</span>
@@ -50,7 +50,7 @@ const Navigation = () => {
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
                 className={`transition-colors ${
-                  scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-blue-200'
+                  scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-white/80'
                 }`}
               >
                 {item.label}
@@ -68,7 +68,7 @@ const Navigation = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`transition-colors ${
-                scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-blue-200'
+                scrolled ? 'text-gray-700 hover:text-primary' : 'text-white hover:text-white/80'
               }`}
             >
               <i className="fas fa-bars text-xl"></i>

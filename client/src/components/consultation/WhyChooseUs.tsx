@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       title: "AI-Powered Tools",
       description: "Leverage artificial intelligence to enhance learning experiences, automate administrative tasks, and provide intelligent insights for better decision-making.",
       icon: "fas fa-brain",
-      color: "primary",
+      color: "secondary",
       badge: "Smart Technology",
       highlights: ["Intelligent Analytics", "Automated Workflows", "Predictive Insights"],
       type: "gradient"
